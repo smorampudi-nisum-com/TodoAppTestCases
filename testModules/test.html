@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="/Users/smorampudi/Desktop/backbone/node_modules/mocha
+    /Users/smorampudi/Desktop/backbone/node_modules/mocha/mocha.css"> -->
+    <link rel="stylesheet" href=".././node_modules/mocha/mocha.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="mocha"></div>
+    <!-- JavaScript Test Libraries. -->
+    <script src=".././node_modules/mocha/mocha.js"></script>
+    <script src=".././node_modules/chai/chai.js"></script>
+    <script src=".././node_modules/sinon-chai/lib/sinon-chai.js"></script>
+    <script src="/Users/smorampudi/Desktop/backbone/test/js/lib/sinon.js"></script>
+
+    <!-- JavaScript Core Libraries -->
+    <script src=".././node_modules/underscore/underscore.js"></script>
+    <script src=".././node_modules/jquery/dist/jquery.js"></script>
+    <script src=".././node_modules/json2/lib/JSON2.js"></script>
+    <script src=".././node_modules/backbone/backbone.js"></script>
+    <script src=".././node_modules/backbone.localstorage/backbone.localStorage.js"></script>
+    <script src=".././node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src=".././node_modules/showdown/bin/showdown.js"></script>
+
+    <!-- Set up Mocha and Chai -->
+    <script>
+        var expect = chai.expect;
+        mocha.setup("bdd");
+  
+        window.onload = function () {
+          (window.mochaPhantomJS || mocha).run();
+        };
+      </script>
+      <script src="../testModules/01/test/js/spec/hello.spec.js"></script>
+      <script src="../testModules/01/test/js/spec/timing.spec.js"></script>
+      <script src="/Users/smorampudi/Desktop/backbone/test/js/spec/namespace.spec.js"></script>
+      <script src="/Users/smorampudi/Desktop/backbone/test/js/spec/todo.spec.js"></script>
+      <script src="/Users/smorampudi/Desktop/backbone/test/js/spec/todos.spec.js"></script>
+</body>
+</html>
